@@ -1,8 +1,17 @@
-vim-instant-markdown
+vim-markdown
 ====================
-Want to instantly preview finnicky markdown files, but don't want to leave your favorite editor, or have to do it in some crappy browser textarea? **vim-instant-markdown** is your friend! When you open a markdown file in vim, a browser window will open which shows the compiled markdown in real-time, and closes once you close the file in vim.
 
-As a bonus, [github-flavored-markdown][gfm] is supported, and styles used while previewing are the same as those github uses!
+This project is forked from 
+[instant-markdown-d](https://github.com/suan/instant-markdown-d).
+
+Want to instantly preview finnicky markdown files, but don't want to leave your
+favorite editor, or have to do it in some crappy browser textarea? 
+**vim-instant-markdown** is your friend! When you open a markdown file in vim, 
+a browser window will open which shows the compiled markdown in real-time, and 
+closes once you close the file in vim.
+
+As a bonus, [github-flavored-markdown][gfm] is supported, and styles used while
+previewing are the same as those github uses!
 
 [![Screenshot][ss]][ssbig]
 
@@ -11,8 +20,11 @@ Installation
 You first need to have node.js with npm installed.
 
 - `[sudo] npm -g install instant-markdown-d`
-- If you're on Linux, the `xdg-utils` package needs to be installed (is installed by default on Ubuntu).
-- Copy the `after/ftplugin/markdown/instant-markdown.vim` file from this repo into your `~/.vim/after/ftplugin/markdown/` (creating directories as necessary), or follow your vim package manager's instructions.
+- If you're on Linux, the `xdg-utils` package needs to be installed (is
+installed by default on Ubuntu).
+- Copy the `after/ftplugin/markdown/instant-markdown.vim` file from this repo
+into your `~/.vim/after/ftplugin/markdown/` (creating directories as necessary)
+, or follow your vim package manager's instructions.
 - Ensure you have the line `filetype plugin on` in your `.vimrc`
 - Open a markdown file in vim and enjoy!
 
