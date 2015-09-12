@@ -52,7 +52,7 @@ function! s:bufGetContents(bufnr)
 
   " inject row marker
   let row_num = line(".") - 1
-  let lines[row_num] = join([lines[row_num], '<a name="#marker" id="marker"></a>'], ' ')
+  let lines[row_num] = join([lines[row_num], '<a id="marker"></a>'], ' ')
 
   return join(lines, "\n")
 endfu
@@ -102,8 +102,8 @@ fu! s:temperedRefresh()
         let b:changedtickLast = b:changedtick
     elseif b:changedtickLast != b:changedtick
         let b:changedtickLast = b:changedtick
-        call s:refreshView()
     endif
+    call s:refreshView()
 endfu
 
 fu! s:previewMarkdown()
