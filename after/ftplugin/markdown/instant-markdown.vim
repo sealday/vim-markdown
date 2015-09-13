@@ -52,7 +52,7 @@ function! s:bufGetContents(bufnr)
 
   " inject row marker
   let row_num = line(".") - 1
-  let lines[row_num] = join([lines[row_num], '<a id="marker"></a>'], ' ')
+  let lines[row_num] = join([lines[row_num], '---cursor---', ':', row_num, ':'], '')
 
   return join(lines, "\n")
 endfu
